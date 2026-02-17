@@ -16,7 +16,14 @@
                 {
                     "name": "file",
                     "index": 1,
-                    "takesValue": true
+                    "takesValue": true,
+                    "required": true
+                },{
+                    "name": "autosave",
+                    "conflictsWith": "rtsave"
+                },{
+                    "name": "rtsave",
+                    "conflictsWith": "autosave"
                 }
             ]
         }
